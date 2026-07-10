@@ -188,7 +188,7 @@ async def on_message(message):
 
         try:
             
-            from zone info import ZoneInfo
+            from zoneinfo import ZoneInfo
             jst = ZoneInfo("Asia/Tokyo")
             # 入力された文字をそれぞれ整数に変換
             year = int(args[1])
