@@ -187,6 +187,7 @@ async def on_message(message):
             return
 
         try:
+            
             from zone info import ZoneInfo
             jst = ZoneInfo("Asia/Tokyo")
             # 入力された文字をそれぞれ整数に変換
