@@ -196,7 +196,7 @@ async def on_message(message):
             second = int(args[6])
 
             # datetimeオブジェクトを作成（日本の時間として扱う）
-            dt = datetime(year, month, day, hour, minute, second)
+            dt = datetime(year, month, day, hour, minute, second, tzinfo=jst)
             
             # UNIX時間に変換（整数にするために int() で囲む）
             unix_time = int(dt.timestamp())
@@ -242,7 +242,7 @@ async def on_message(message):
         (["うお", "どわー", "きちー", "けけっ","必死","冗談ですやん"], "うおw"),
         (["ぼる", "ちきん"], "ぼるきちいぃぃ"),
         (["ちくまる様", "chikumaru様"], "chikumaru様🙏\nアーメン"),
-        (["Curbuncle様","カーバンクル様"], "Curbuncle様🙏\nアーメン"),
+        (["Carbuncle様","カーバンクル様"], "Carbuncle様🙏\nアーメン"),
         (["にょ"],"にょ、にょ、にょまれ〜い🐮🖐️"),
         (["まかう","んー","ん〜"],"んん〜まかｧｧウｯｯ!!!!🤏😎"),
         # 💡 さらにパターンを増やしたい場合は、この下にカンマ（,）区切りで同じように追加していけます
